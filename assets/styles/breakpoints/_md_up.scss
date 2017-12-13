@@ -1,0 +1,165 @@
+
+@include media-breakpoint-up(md) {
+
+	a {
+		transition: all 0.2s ease-in-out;
+
+		&:hover, &:active, &:focus {
+			color: darken($blue, 9%);
+		}
+	}
+
+	.nav {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	/*********************
+	HEADER
+	*********************/
+
+	label[for="nav-trigger"] {
+		display: none;
+	}
+
+	.site-header {
+		padding: 0;
+		border-top: 30px solid $red;
+		background-color: $blue;
+
+	  	.header-main {
+	  		padding: 0;
+	  	}
+
+	  	.site-logo {
+	  		position: absolute;
+	  		top: -30px;
+	  		z-index: 1;
+	  		background-color: $white;
+	  		padding: 1.5em;
+	  		text-align: center;
+  			justify-content: center;
+  			border-bottom-left-radius: 1em;
+  			border-bottom-right-radius: 1em;
+
+	  		.logo {
+	  			height: 100px;
+	  		}
+	  	}
+	}
+
+	  	.main-nav {
+	  		padding: 0.5em $grid-gutter-width;
+
+	  		.nav {
+	  			position: static;
+			    display: flex;
+			    background-color: transparent;
+			    flex-direction: row;
+			    align-items: center;
+			    justify-content: flex-end;
+			    height: 100%;
+
+		  		li {
+		  			opacity: 1;
+		  			transform: none;
+		  			flex-grow: 0;
+
+		  			a {
+		  				color: $white;
+		  				font-size: $medium-text;
+		  				padding: 1em;
+		  				@include font-smooth;
+
+			  			&:hover {
+			  				color: lighten($red, 10%);
+			  			}
+			  		}
+		  		}
+	  		}
+	  	}
+
+		.preheader {
+			display: block;
+			background-color: $blue;
+
+			.nav {
+				justify-content: flex-end;
+				
+				li a {
+					color: $white;
+					line-height: 1;
+					padding: 0.75em 1em 1em;
+					font-weight: bold;
+					@include font-smooth;
+				}
+
+				.account a {
+					font-weight: normal;
+				}
+
+				.login a {
+					background-color: $green;
+
+					&:hover {
+						background-color: darken($green, 5%);
+					}
+				}
+			}
+		}
+
+
+	/*********************
+	HEROIC
+	*********************/
+
+	.page-header {
+		padding-top: 3em 0;
+	}
+
+
+	/*********************
+	BLOCKS
+	*********************/
+
+	.how-to {
+		li {
+			.icon {
+				flex: 0 0 150px;
+			}
+		}
+	}
+
+
+	/*********************
+	FOOTER
+	*********************/
+
+	.site-footer {
+		padding: 3em 0;
+
+		.footer-menu {
+			a {
+				padding: 0 0 0 2em;
+
+				&:hover {
+					color: lighten($red, 10%);
+				}
+			}
+
+			li:first-child a {
+				padding: 0;
+			}
+		}
+
+		.col-logos {
+			align-items: flex-start;
+			justify-content: flex-end;
+
+			.footer-logo {
+				margin-left: 3em;
+			}
+		}
+	}
+
+}

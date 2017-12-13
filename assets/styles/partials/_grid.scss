@@ -1,0 +1,17 @@
+
+.container {
+	max-width: $container-width;
+	width: 100%;
+
+	@include media-breakpoint-up(lg) {
+		width: 96%;
+	}
+}
+
+section, .section {
+	margin: 3em 0;
+}
+
+.sidebar {
+	margin-top: 3em;
+}

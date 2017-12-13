@@ -1,0 +1,7 @@
+
+@include media-breakpoint-up(lg) {
+
+	.main-nav li:last-child a {
+		padding-right: 0;
+	}
+}

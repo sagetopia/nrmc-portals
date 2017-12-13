@@ -1,0 +1,115 @@
+/******************************************************************
+Site Name: Risk Assessment
+Author: Sagetopia
+
+Stylesheet: Variables
+******************************************************************/
+
+$assetpath: 				'/assets';
+$imgpath: 					'/img';
+
+
+/*********************
+FONTS
+*********************/
+
+$sans-serif:        		"Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif:             		"Georgia", Cambria, Times New Roman, Times, serif;
+
+$heading:					$sans-serif;
+$body:						$sans-serif;
+
+$fa:						'FontAwesome', 'Font Awesome', FontAwesome;
+
+// Font sizes
+$base:						16px;
+$base-line-height:			1.4;
+
+$small-text:				0.875em;
+$normal-text:				1em;
+$medium-text:				1.125em;
+$large-text:				1.325em;
+
+$h1: 						2.5em;
+$h2: 						2em;
+$h3: 						1.75em;
+$h4: 						1.5em;
+$h5: 						1.25em;
+$h6: 						1em;
+$heading-line-height:		1.25;
+
+
+/*********************
+GRID
+*********************/
+$container-width:			1008px;
+$enable-flex:           	true;
+$grid-gutter-width-base:	32px;
+$grid-gutter-width:			$grid-gutter-width-base / 2;
+
+$logo-height:				50px;
+$logo-height-md:			80px;
+$header-padding: 			1em;
+$header-padding-md:			2em;
+
+$input-line-height:			1.4;
+
+
+/*********************
+PALETTE
+*********************/
+
+$white:						#ffffff;
+$light-grey:				#EDEDED;
+$grey:						#BFBFBF;
+$med-grey:					#838383;
+$dark-grey:					#4D4D4D;
+$black:						#555555;
+
+$med-blue:					#0081C6;
+$blue:						#005288;
+$dark-blue:					#242a37;
+
+$red:						#C60751;
+
+
+/*********************
+COLORS
+*********************/
+
+$text-color:        		$black;
+$border-color:      		$dark-blue;
+
+$grey-gradient:				linear-gradient(to bottom, $light-grey, transparent);
+
+
+/*********************
+BOOTSTRAP
+*********************/
+
+$btn-font-weight:			500;
+$input-btn-border-width:	3px;
+$btn-border-radius:			5px;
+
+$btn-primary-color:			$blue;
+$btn-primary-bg:			$blue;
+$btn-primary-border:		$blue;
+
+$btn-secondary-color:		$red;
+$btn-secondary-bg:			$red;
+$btn-secondary-border:		$red;
+
+/*********************
+ICONS
+*********************/
+$check:						"\f00c";
+$close:						"\f00d";
+$close-circle:				"\f057";
+
+
+/*********************
+EASING
+*********************/
+$ease-out-cube:				cubic-bezier(0.215, 0.61, 0.355, 1);
+$ease-in-out-cube:			cubic-bezier(0.645, 0.045, 0.355, 1);
+

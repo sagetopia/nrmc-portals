@@ -1,0 +1,32 @@
+
+/*********************
+BUTTON DEFAULTS
+*********************/
+
+%btn {
+	display: inline-block;
+	// text-decoration: none;
+	// font-size: $medium-text;
+	// font-weight: bold;
+	// padding: 0.5em 1.5em 0.65em;
+	// margin: 0 0 0.5em;
+	// border: 0;
+	// border-radius: 5px;
+	// line-height: 1;
+
+  	&:hover, &:focus, &:active {
+	  	text-decoration: none;
+  	}
+
+  	&:active {
+		top: 1px;
+  	} 
+}
+
+.btn {
+	@extend %btn;
+
+	+ .btn {
+		margin-left: 1em;
+	}
+}

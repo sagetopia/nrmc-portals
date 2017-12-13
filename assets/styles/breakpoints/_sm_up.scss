@@ -1,0 +1,25 @@
+
+@include media-breakpoint-up(sm) {
+
+	.alignleft, .alignright {
+		margin-bottom: 2em;
+	}
+
+	.alignleft {
+		margin-right: 2em;
+		float: left;
+	}
+
+	.alignright {
+		margin-left: 2em;
+		float: right;
+		clear: right;
+	}
+
+	.pricing-grid {
+		.pricing-item {
+			@extend .col-sm-6;
+			max-width: 50%;
+		}
+	}
+}
