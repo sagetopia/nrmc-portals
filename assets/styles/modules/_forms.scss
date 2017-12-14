@@ -110,6 +110,7 @@ form {
 
     &:before {
         content: '';
+        display: block;
         height: $base;
         width: $base;
         flex: 0 0 $base;
