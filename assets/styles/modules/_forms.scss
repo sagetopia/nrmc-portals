@@ -20,6 +20,7 @@ form {
         width: 100%;
         height: auto;
         font-size: $medium-text;
+        line-height: normal;
         margin-bottom: 0.5em;
         background-color: $white;
         -webkit-appearance: none;
@@ -38,6 +39,13 @@ form {
                 color: $med-grey;
             }
         }
+
+        &.input-inline {
+            display: inline-block;
+            vertical-align: middle;
+            width: auto;
+            margin: 0;
+        }
     }
 
     .select2 .select2-selection {
@@ -45,6 +53,7 @@ form {
 
         .select2-selection__rendered {
             padding: 0;
+            line-height: normal;
 
             .select2-selection__placeholder {
                 color: $med-grey;
@@ -58,6 +67,7 @@ form {
 
     label {
         font-weight: normal;
+        vertical-align: middle;
     }
 
     select {
