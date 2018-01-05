@@ -27,7 +27,7 @@
             var placeholder = $(this).attr('placeholder');
             $(this).select2({ 
                 placeholder: placeholder,
-                minimumResultsForSearch: Infinity,
+                minimumResultsForSearch: 5,
             });
         });
 
